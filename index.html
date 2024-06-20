@@ -10,7 +10,8 @@
     <div class="container mt-5">
       <h1>Configuración de esquema de Base de Datos de Alta Disponibilidad utilizando SQL Server</h1>
       <div class="alert alert-primary" role="alert">
-        Se sugiere llevar a cabo los pasos en el orden indicado.
+        Se sugiere llevar a cabo los pasos en el orden indicado. No instalar nada en las máquinas en donde se instalará SQL Server, sin antes haberlos unido al dominio.
+        El paso 4 y 5, pueden intercambiar sus posiciones.
       </div>
       <div class="mb-3">
         <label for="pdfSelect" class="form-label">Selecciona una opción</label>
@@ -20,6 +21,7 @@
           <option value="Paso2-ServidorDominio.pdf">2. Servidor de dominio</option>
           <option value="Paso3-UnirMaquinasAlDominio.pdf">3. Unir máquinas al dominio</option>
           <option value="Paso4-ConfigurarQuorum.pdf">4. Configurar Quorum</option>
+          <option value="Paso4-ConfigurarQuorum.pdf">5. Instalar SQL Server y Management en la cuenta del dominio</option>
         </select>
       </div>
       <div id="alertDiv" class="alert alert-danger d-none" role="alert">
